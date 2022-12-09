@@ -50,6 +50,10 @@ img{
     object-position: center;
 }
 
+.mobile-img{
+    display: none;
+}
+
 .product-name{
     color: var(--dark-blue);
     font-size: 33px;
@@ -110,16 +114,25 @@ button:hover{
 }
 
 @media screen and (max-width: 500px) {
+
+    .desktop-img{
+        display: none;
+    }
+
+    .mobile-img{
+        display: block;
+    }
+
     .product-container{
         flex-direction: column;
         justify-content: flex-start;
-        max-height: 600px;
+        min-height: 600px;
         min-width: 375px;
     }
 
     img{
         width: 100%;
-        height: 35%;
+        height: 42%;
     }
 
     .product-desc{
